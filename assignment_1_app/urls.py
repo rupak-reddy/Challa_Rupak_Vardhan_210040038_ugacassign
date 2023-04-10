@@ -19,6 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('index.html', views.index, name="index"),
-    path('form.html', views.form, name="form")
+    path('form.html', views.form, name="form"),
+    path('form2.html', views.form2, name="form2"),
 ]

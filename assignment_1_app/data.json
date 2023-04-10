@@ -3,8 +3,33 @@
 "dept":"Civil Engineering Department",
 "hostel":"Hostel 3"},
 
-{"name": "Sandipan das",
-"roll":"2100400135",
+{"name": "John Wick",
+"roll":"1600400135",
 "dept":"Civil Engineering Department",
-"hostel":"Hostel 3"}
+"hostel":"Hostel 1"},
+
+{"name": "Steve Smith",
+"roll":"1900500100",
+"dept":"Computer Science Department",
+"hostel":"Hostel 9"},
+
+{"name": "Adam",
+"roll":"2100400130",
+"dept":"Electrical Engineering Department",
+"hostel":"Hostel 5"},
+
+{"name": "Mark Ruffalo",
+"roll":"1800700023",
+"dept":"Electrical Engineering Department",
+"hostel":"Hostel 6"},
+
+{"name": "Robert Phillip",
+"roll":"220020056",
+"dept":"Chemical Engineering Department",
+"hostel":"Hostel 2"},
+
+{"name": "Phillip Anderson",
+"roll":"100010023",
+"dept":"Aerospace Engineering Department",
+"hostel":"Hostel 18"}
 ]

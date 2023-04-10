@@ -18,6 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    {% include 'assignment_1_app/messages.html' %}
+
+    {% block content %}
+  
+    {% endblock %}  
+
     <div class="container-fluid bg-dark">
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom">
     <div class="container">
@@ -31,19 +37,13 @@
     <div class="container justify-content-end">
     <form class="d-flex">
         <div class="container">
-        <button class="btn btn-success" type="button"><a href="/form.html" class="link-light">Add</a></button>
-        </div>
-
-        <div class="container">
-        <button class="btn btn-success" type="button"><a href="/form.html" class="link-light">Modify</a></button>
-        </div>
-
-        <div class="container">
-        <button class="btn btn-success" type="button"><a href="/form.html" class="link-light">Delete</a></button>
+        <button class="btn btn-success" type="button"><a href="/form.html" class="link-light">Add Student Details</a></button>
         </div>
     </form>
+    
     </div>
 </nav>
+
 <div class="container justify-content-center"></div>
 <br>
 <br>
@@ -51,19 +51,23 @@
 <table class="table table-success table-hover">
     <thead>
       <tr>
+
         <th>Name</th>
         <th>Roll Number</th>
         <th>Department</th>
         <th>Hostel</th>
+=
       </tr>
     </thead>
     <tbody>
         {% for data in data %}
         <tr>
+
             <th>{{ data.name }}</th>
             <th>{{ data.roll }}</th>
             <th>{{ data.dept }}</th>
             <th>{{ data.hostel }}</th>
+
         </tr>
         {% endfor %}
     </tbody>
@@ -73,10 +77,10 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark bottom">
     <div class="container">
-        <span class="navbar-text text-white" style="font-family: 'Inconsolata', monospace; font-size:x-large"><span style="font-size:125%;color:white;">&copy;</span> Copyright 2023, IIT Bombay</span>
+        <span class="navbar-text text-white" style="font-family: 'Inconsolata', monospace; font-size:x-large"><span style="color:white ; font-size:30px;">&copy;</span> Copyright 2023, IIT Bombay</span>
     </div>
     <div class="container justify-content-end">
-        <span class="navbar-text text-white" style="font-family: 'Edu NSW ACT Foundation', cursive; font-size:x-large">Created and Designed with <span style="font-size:125%;color:red;">&hearts;</span> by Challa Rupak Vardhan</span>
+        <span class="navbar-text text-white" style="font-family: 'Edu NSW ACT Foundation', cursive; font-size:x-large">Created and Designed with <span style="color:red ; font-size:25px;">&hearts;</span> by Challa Rupak Vardhan</span>
     </div>
     </nav>
 </div>

@@ -29,36 +29,35 @@
         <span class="navbar-text text-white text-center" style="font-family: 'Ruda', sans-serif; font-size:xx-large;">Student Management Portal  IIT Bombay</span>
     </div>
     <div class="container justify-content-end">
-      <form class="d-flex">
-          <div class="container">
-          <button class="btn btn-success" type="button"><a href="/form.html" class="link-light">Add Student Details</a></button>
-          </div>
-      </form>
-      </div>
+    <form class="d-flex">
+        <input class="form-control me-3" type="text" placeholder="Search">
+        <button class="btn btn-success" type="button">Search</button>
+    </form>
+    </div>
 </nav>
 <div class="container justify-content-center"></div>
 <br>
 <br>
-<h4 class="text-center text-white" style="font-family: 'Dosis', sans-serif;font-size: xx-large;">Add Student Details</h4>
+<h4 class="text-center text-white" style="font-family: 'Dosis', sans-serif;font-size: xx-large;">Modify Student Details</h4>
 <div class="container mt-3 text-white bg-primary" style="max-width: 45%;">
-    <form action="/" method="POST">
+    <form action="/form2.html" method="POST">
         {%csrf_token%}
         <br>
       <div class="mb-3 mt-3">
         <label for="name" style="font-size:large; padding-bottom: 3%;">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name" required value={{dict_sample.name}}>
+        <input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name" required>
       </div>
       <div class="mb-3">
         <label for="roll" style="font-size:large; padding-bottom: 3% ;">Roll Number</label>
-        <input type="text" class="form-control" id="roll" placeholder="Enter your Roll Number" name="roll" required value={{dict_sample.roll}}>
+        <input type="text" class="form-control" id="roll" placeholder="Enter your Roll Number" name="roll" required>
       </div>
       <div class="mb-3">
         <label for="dept" style="font-size:large;padding-bottom: 3% ">Department</label>
-        <input type="text" class="form-control" id="dept" placeholder="Enter your Department" name="dept" required value={{dict_sample.dept}} >
+        <input type="text" class="form-control" id="dept" placeholder="Enter your Department" name="dept" required >
       </div>
       <div class="mb-3">
         <label for="hostel" style="font-size:large;padding-bottom: 3%">Hostel</label>
-        <input type="text" class="form-control" id="hostel" placeholder="Enter your Hostel" name="hostel" required value={{dict_sample.hostel}}>
+        <input type="text" class="form-control" id="hostel" placeholder="Enter your Hostel" name="hostel" required>
       </div>
       <div class="container justify-content-center" style="max-width:20%">
       <button type="submit" class="btn btn-dark">Submit</button>
